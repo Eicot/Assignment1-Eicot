@@ -15,9 +15,9 @@ mapLayer.addTo(map);
 loadData();
 
 async function loadData(){
-    const response = await axios.get("sg.json");
+    const response = await axios.get("sg.geojson");
 
-    const popLayer = L.geoJson(response.data, {
+    const layer1 = L.geoJson(response.data, {
         onEachFeature: function(feature, layer) {
             console.log(feature);
 
@@ -27,8 +27,9 @@ async function loadData(){
     }
 )}
 
-popLayer.addTo(map);
 
+layer1.addTo(map);
 popLayer.setStyle({
     color:'red'
+     
 })
