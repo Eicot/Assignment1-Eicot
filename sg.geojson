@@ -1,0 +1,967 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7442,1.3778 ]
+    },
+    "properties": {
+    "city":"Keat Hong Village",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.75,1.3833 ]
+    },
+    "properties": {
+    "city":"Choa Chu Kang New Town",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7525,1.3817 ]
+    },
+    "properties": {
+    "city":"Bukit Panjang Estate",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8719,1.3972 ]
+    },
+    "properties": {
+    "city":"Jalan Kayu",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8692,1.3956 ]
+    },
+    "properties": {
+    "city":"Bukit Sembawang Estate",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9072,1.39 ]
+    },
+    "properties": {
+    "city":"Kampong Serangoon Kechil",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North East"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7364,1.3819 ]
+    },
+    "properties": {
+    "city":"Kampong Cutforth",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7969,1.4456 ]
+    },
+    "properties": {
+    "city":"Mok Peng Hiang Estate",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7867,1.4363 ]
+    },
+    "properties": {
+    "city":"Woodlands New Town",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8942,1.3811 ]
+    },
+    "properties": {
+    "city":"Kampong Pinang",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8972,1.3756 ]
+    },
+    "properties": {
+    "city":"Serangoon",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9,1.3833 ]
+    },
+    "properties": {
+    "city":"Kampong Sungai Tengah",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8764,1.39 ]
+    },
+    "properties": {
+    "city":"Kampong Tongkang Pechah",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9078,1.3786 ]
+    },
+    "properties": {
+    "city":"Kampong Teban",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North East"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9017,1.3761 ]
+    },
+    "properties": {
+    "city":"Kangkar",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North East"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7228,1.3342 ]
+    },
+    "properties": {
+    "city":"Jurong Town",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7167,1.35 ]
+    },
+    "properties": {
+    "city":"Kampong Ulu Jurong",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8681,1.3844 ]
+    },
+    "properties": {
+    "city":"Seletar Hills Estate",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7989,1.4533 ]
+    },
+    "properties": {
+    "city":"Tay Keng Loon Estate",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9028,1.3994 ]
+    },
+    "properties": {
+    "city":"Matilda Estate",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7625,1.3808 ]
+    },
+    "properties": {
+    "city":"Bukit Panjang New Town",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9158,1.3814 ]
+    },
+    "properties": {
+    "city":"Kampong Beremban",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North East"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7708,1.4411 ]
+    },
+    "properties": {
+    "city":"Marsiling",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8917,1.36 ]
+    },
+    "properties": {
+    "city":"Chia Keng",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8833,1.3667 ]
+    },
+    "properties": {
+    "city":"Somapah Serangoon",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7068,1.3445 ]
+    },
+    "properties": {
+    "city":"Jurong West",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7,1.3333 ]
+    },
+    "properties": {
+    "city":"Boon Lay",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9333,1.3333 ]
+    },
+    "properties": {
+    "city":"Kampong Chai Chee",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South East"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9333,1.3333 ]
+    },
+    "properties": {
+    "city":"Ulu Bedok",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South East"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9167,1.3167 ]
+    },
+    "properties": {
+    "city":"Kampong Pachitan",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South East"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9273,1.3236 ]
+    },
+    "properties": {
+    "city":"Bedok New Town",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South East"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8833,1.35 ]
+    },
+    "properties": {
+    "city":"Kampong Sireh",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9544,1.3244 ]
+    },
+    "properties": {
+    "city":"Bedok Ville",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South East"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.76,1.3836 ]
+    },
+    "properties": {
+    "city":"Kampong Bukit Panjang",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8667,1.35 ]
+    },
+    "properties": {
+    "city":"Kampong Lew Lian",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7675,1.4297 ]
+    },
+    "properties": {
+    "city":"Marsiling Estate",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8539,1.3897 ]
+    },
+    "properties": {
+    "city":"Yio Chu Kang Estate",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8514,1.3911 ]
+    },
+    "properties": {
+    "city":"Yio Chu Kang",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8397,1.3803 ]
+    },
+    "properties": {
+    "city":"Ang Mo Kio New Town",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.85,1.3833 ]
+    },
+    "properties": {
+    "city":"Kampong Amoy Quee",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8578,1.3792 ]
+    },
+    "properties": {
+    "city":"Singapore United Plantation",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9,1.3333 ]
+    },
+    "properties": {
+    "city":"Kampong Ladang",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9,1.3167 ]
+    },
+    "properties": {
+    "city":"Kampong Ubi",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South East"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9,1.3333 ]
+    },
+    "properties": {
+    "city":"Kampong Reteh",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8667,1.3667 ]
+    },
+    "properties": {
+    "city":"Kampong Kebun Baharu",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.75,1.35 ]
+    },
+    "properties": {
+    "city":"Ong Lee",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8608,1.3278 ]
+    },
+    "properties": {
+    "city":"Saint Michael’s Estate",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8286,1.3833 ]
+    },
+    "properties": {
+    "city":"Teacher’s Housing Estate",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8333,1.2667 ]
+    },
+    "properties": {
+    "city":"Saga",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8333,1.2667 ]
+    },
+    "properties": {
+    "city":"Kampong Kopit",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8333,1.2833 ]
+    },
+    "properties": {
+    "city":"Tanjong Pagar",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8178,1.4028 ]
+    },
+    "properties": {
+    "city":"Nee Soon Estate",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.85,1.4033 ]
+    },
+    "properties": {
+    "city":"Kampong Pengkalan Petai",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8444,1.41 ]
+    },
+    "properties": {
+    "city":"Kampong Pengkalan Kundor",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8981,1.3522 ]
+    },
+    "properties": {
+    "city":"Kampong Siren",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8214,1.3953 ]
+    },
+    "properties": {
+    "city":"Springleaf Park",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9594,1.3778 ]
+    },
+    "properties": {
+    "city":"Kampong Loyang",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South East"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9183,1.3881 ]
+    },
+    "properties": {
+    "city":"Kampong Sungai Blukar",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North East"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8306,1.4375 ]
+    },
+    "properties": {
+    "city":"Kam Wak Hassan",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8267,1.4381 ]
+    },
+    "properties": {
+    "city":"Sungai Simpang",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7539,1.3944 ]
+    },
+    "properties": {
+    "city":"Yew Tee",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.909,1.3983 ]
+    },
+    "properties": {
+    "city":"Punggol",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"Central Singapore"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9103,1.4125 ]
+    },
+    "properties": {
+    "city":"Kampong Punggol",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North East"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8364,1.4614 ]
+    },
+    "properties": {
+    "city":"Kampong Wak Hassan",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8239,1.4444 ]
+    },
+    "properties": {
+    "city":"Chong Pang",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8185,1.4491 ]
+    },
+    "properties": {
+    "city":"Sembawang",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8311,1.4333 ]
+    },
+    "properties": {
+    "city":"Yishun New Town",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8089,1.2597 ]
+    },
+    "properties": {
+    "city":"Sarang Rimau",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.9319,1.3783 ]
+    },
+    "properties": {
+    "city":"Kampong Pasir Ris",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"North East"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7336,1.3517 ]
+    },
+    "properties": {
+    "city":"Kampong Sungai Jurong",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.7333,1.3333 ]
+    },
+    "properties": {
+    "city":"Kampong Java Teban",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.75,1.3333 ]
+    },
+    "properties": {
+    "city":"Kampong Tebing Terjun",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.75,1.3167 ]
+    },
+    "properties": {
+    "city":"Kampong Sungai Pandan",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.75,1.3167 ]
+    },
+    "properties": {
+    "city":"West Coast Village",
+    "country":"Singapore",
+    "iso2":"SG",
+    "admin_name":"South West"
+    }
+  }
+]
+}

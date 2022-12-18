@@ -11,3 +11,24 @@ const mapLayer = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x
 });
 
 mapLayer.addTo(map);
+
+loadData();
+
+async function loadData(){
+    const response = await axios.get("sg.json");
+
+    const popLayer = L.geoJson(response.data, {
+        onEachFeature: function(feature, layer) {
+            console.log(feature);
+
+            layer.bindPopup(feature.coordinates);
+
+        }
+    }
+)}
+
+popLayer.addTo(map);
+
+popLayer.setStyle({
+    color:'red'
+})
