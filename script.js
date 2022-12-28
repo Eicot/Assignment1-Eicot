@@ -1,4 +1,4 @@
-let singapore = [1.3521, 103.8198]; //Singapore latlong
+let singapore = [1.34096, 103.8198]; //Singapore latlong
 let map = L.map('map').setView(singapore, 12); //Setting center point
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -17,22 +17,24 @@ async function loadData() {
 
     let response = await axios.get("singapore-population-2022.geojson");
 
-
     const singaporePopulation = L.geoJson(response.data, {
 
         onEachFeature: function(feature, layer) {
 
             console.log(feature);
 
-
-            layer.bindPopup(feature.properties.planningArea);
+            layer.bindPopup(`
+            <b> Planning Area   : </b> ${feature.properties.planningArea} <br>
+            <b> Sub Zone        : </b> ${feature.properties.subZone} <br>
+            <b> Total Population: </b> ${feature.properties.totalPopulation} <br>
+            `);
 
         }
-    })
-
+    }
+    
+    )
 
     singaporePopulation.addTo(map);
-
     singaporePopulation.setStyle({
         color: 'blue'
     })
