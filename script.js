@@ -15,7 +15,7 @@ mapLayer.addTo(map);
 loadData();
 
 async function loadData(){
-    const response = await axios.get("sample.geojson");
+    const response = await axios.get("sg.geojson");
 
     const layer1 = L.geoJson(response.data, {
         onEachFeature: function(feature, layer) {
