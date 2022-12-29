@@ -10,6 +10,15 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw' //demo access token
 }).addTo(map);
 
+// const singaporePopulationLayer = L.markerClusterGroup().addTo(map);
+const singaporePopulationLayer = L.layerGroup().addTo(map);
+const agePopulationLayer = L.layerGroup().addTo(map);
+
+const layerControl = L.control.layers({
+    'singaporePopulation' : singaporePopulationLayer,
+    'agePopulation' : agePopulationLayer
+}, {}).addTo(map);
+
 loadData();
 
 
@@ -30,12 +39,30 @@ async function loadData() {
             `);
 
         }
-    }
-    
-    )
+    } ).addTo(singaporePopulationLayer)
 
-    singaporePopulation.addTo(map);
-    singaporePopulation.setStyle({
-        color: 'blue'
-    })
+    const agePopulation = L.geoJson(response.data, {
+
+        onEachFeature: function(feature, layer) {
+
+            console.log(feature);
+
+            layer.bindPopup(`
+            <b> Planning Area   : </b> ${feature.properties.planningArea} <br>
+            <b> Sub        : </b> ${feature.properties.subZone} <br>
+            <b> Total Population: </b> ${feature.properties.totalPopulation} <br>
+            `);
+
+        }
+    }    ).addTo(agePopulationLayer)
+
+    //singaporePopulation.addTo(map);
+    //singaporePopulation.setStyle({
+    //    color: 'navy'
+    //})
+    
 }  
+
+
+//.openPopup for search pop up
+    //marker cluster
