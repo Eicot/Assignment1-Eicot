@@ -37,9 +37,20 @@ async function loadData() {
             <b> Sub Zone        : </b> ${feature.properties.subZone} <br>
             <b> Total Population: </b> ${feature.properties.totalPopulation} <br>
             `);
-
+        },
+        style: function (feature) {
+            return {
+                fillColor: "#fff",
+                weight: 1,
+                opacity: 1,
+                color: "black",
+                fillOpacity: 0.65
+            };
         }
+        
     } ).addTo(singaporePopulationLayer)
+
+
 
     const agePopulation = L.geoJson(response.data, {
 
@@ -52,7 +63,6 @@ async function loadData() {
             <b> Sub        : </b> ${feature.properties.subZone} <br>
             <b> Total Population: </b> ${feature.properties.totalPopulation} <br>
             `);
-
         }
     }    ).addTo(agePopulationLayer)
 
