@@ -30,20 +30,28 @@ async function loadData() {
 
         onEachFeature: function(feature, layer) {
 
-            console.log(feature);
-
             layer.bindPopup(`
             <b> Planning Area   : </b> ${feature.properties.planningArea} <br>
             <b> Sub Zone        : </b> ${feature.properties.subZone} <br>
             <b> Total Population: </b> ${feature.properties.totalPopulation} <br>
             `);
         },
+
+        // style: function colorPop(d) {
+        //     return d > 40000 ? '#b30000' : 
+        //         d > 30000 ? '#e34a33' :
+        //             d > 20000 ? '#fc8d59' :
+        //                 d > 10000 ? '#fdcc8a' :
+        //                     d > 1 ? '#fef0d9' :
+        //                         '#fff';
+        // },
+
         style: function (feature) {
             return {
-                fillColor: "#fff",
+                fillColor: (colorPop(feature.properties.totalPopulation)),
                 weight: 1,
                 opacity: 1,
-                color: "black",
+                color: "grey",
                 fillOpacity: 0.65
             };
         }
