@@ -19,6 +19,15 @@ const layerControl = L.control.layers({
     'agePopulation' : agePopulationLayer
 }, {}).addTo(map);
 
+function colorPop(d) { 
+return d > 40000 ? '#b30000' : 
+    d > 30000 ? '#e34a33' :
+        d > 20000 ? '#fc8d59' :
+            d > 10000 ? '#fdcc8a' :
+                d > 1 ? '#fef0d9' :
+                    '#fff';
+        }
+
 loadData();
 
 
@@ -37,14 +46,6 @@ async function loadData() {
             `);
         },
 
-        // style: function colorPop(d) {
-        //     return d > 40000 ? '#b30000' : 
-        //         d > 30000 ? '#e34a33' :
-        //             d > 20000 ? '#fc8d59' :
-        //                 d > 10000 ? '#fdcc8a' :
-        //                     d > 1 ? '#fef0d9' :
-        //                         '#fff';
-        // },
 
         style: function (feature) {
             return {
@@ -71,6 +72,15 @@ async function loadData() {
             <b> Sub        : </b> ${feature.properties.subZone} <br>
             <b> Total Population: </b> ${feature.properties.totalPopulation} <br>
             `);
+        },
+        style: function (feature) {
+            return {
+                fillColor: (colorPop(feature.properties.totalPopulation)),
+                weight: 1,
+                opacity: 1,
+                color: "blue",
+                fillOpacity: 0.65
+            };
         }
     }    ).addTo(agePopulationLayer)
 
