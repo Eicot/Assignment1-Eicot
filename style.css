@@ -1,6 +1,11 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
 #map {
     height: 100vh;
-    margin: auto;
+    width: 100vw;
 }
 
 .info {
