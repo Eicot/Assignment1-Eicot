@@ -20,13 +20,37 @@ const layerControl = L.control.layers({
 }, {}).addTo(map);
 
 function colorPop(d) { 
-return d > 40000 ? '#b30000' : 
-    d > 30000 ? '#e34a33' :
-        d > 20000 ? '#fc8d59' :
-            d > 10000 ? '#fdcc8a' :
-                d > 1 ? '#fef0d9' :
-                    '#fff';
+return d > 50000 ? '#800026' : 
+    d > 40000 ? '#BD0026' :
+        d > 30000 ? '#E31A1C' :
+            d > 20000 ? '#FC4E2A' :
+                d > 10000 ? '#FEB24C' :
+                    d > 1 ? '#FED976' :
+                    '#FFEDA0';
         }
+
+function highlightFeature(e) {
+    var layer = e.target;
+
+    layer.setStyle({
+        weight: 5,
+        color: 'black',
+        dashArray: '',
+        fillOpacity: 0.7
+    });
+
+    layer.bringToFront();
+}
+
+function resetHighlight(e) {
+    singaporePopulationLayer.resetStyle(e.target);
+}
+
+
+function zoomToFeature(e) {
+    map.fitBounds(e.target.getBounds());
+}
+
 
 loadData();
 
@@ -39,22 +63,28 @@ async function loadData() {
 
         onEachFeature: function(feature, layer) {
 
-            layer.bindPopup(`
-            <b> Planning Area   : </b> ${feature.properties.planningArea} <br>
-            <b> Sub Zone        : </b> ${feature.properties.subZone} <br>
-            <b> Total Population: </b> ${feature.properties.totalPopulation} <br>
-            `);
+            layer.on({
+                mouseover: highlightFeature,
+                mouseout: resetHighlight,
+                click: zoomToFeature
+            })
+
+            // layer.on('mouseout', function() {
+            //     singaporePopulation.resetStyle(this);
+            // })
         },
 
 
         style: function (feature) {
             return {
                 fillColor: (colorPop(feature.properties.totalPopulation)),
-                weight: 1,
+                weight: 2,
                 opacity: 1,
-                color: "grey",
-                fillOpacity: 0.65
-            };
+                color: "white",
+                dashArray: '3',
+                fillOpacity: 0.7,
+                function: resetHighlight,
+            }
         }
         
     } ).addTo(singaporePopulationLayer)
