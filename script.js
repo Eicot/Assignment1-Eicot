@@ -15,8 +15,8 @@ const singaporePopulationLayer = L.layerGroup().addTo(map);
 const agePopulationLayer = L.layerGroup().addTo(map);
 
 const layerControl = L.control.layers({
-    'singaporePopulation' : singaporePopulationLayer,
-    'agePopulation' : agePopulationLayer
+    'Overall Population' : singaporePopulationLayer,
+    'Age Population' : agePopulationLayer
 }, {}).addTo(map);
 
 function colorPop(d) { 
@@ -40,40 +40,43 @@ function highlightFeature(e) {
     });
 
     layer.bringToFront();
+    info.update(layer.feature.properties);
 }
-
+ 
 function resetHighlight(e) {
-    singaporePopulationLayer.resetStyle(e.target);
+    e.resetStyle(e.target),
+    info.update()
 }
-
 
 function zoomToFeature(e) {
     map.fitBounds(e.target.getBounds());
 }
 
+var info = L.control();
+
+info.onAdd = function (layer) {
+    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+    this.update();
+    return this._div;
+};
+
+// method that we will use to update the control based on feature properties passed
+info.update = function (props) {
+    this._div.innerHTML = '<h4>Singapore Population</h4>' +  (props ?
+        '<b>' + props.planningArea + '</b><br />' + props.totalPopulation + ' people '
+        : 'Hover over a state');
+};
+
+info.addTo(map);
+
 
 loadData();
-
 
 async function loadData() {
 
     let response = await axios.get("singapore-population-2022.geojson");
 
     const singaporePopulation = L.geoJson(response.data, {
-
-        onEachFeature: function(feature, layer) {
-
-            layer.on({
-                mouseover: highlightFeature,
-                mouseout: resetHighlight,
-                click: zoomToFeature
-            })
-
-            // layer.on('mouseout', function() {
-            //     singaporePopulation.resetStyle(this);
-            // })
-        },
-
 
         style: function (feature) {
             return {
@@ -85,8 +88,17 @@ async function loadData() {
                 fillOpacity: 0.7,
                 function: resetHighlight,
             }
-        }
+        },
         
+        onEachFeature: function(feature, layer) {
+
+            layer.on({
+                mouseover: highlightFeature,
+                mouseout: resetHighlight,
+                click: zoomToFeature
+            })
+        }
+
     } ).addTo(singaporePopulationLayer)
 
 
@@ -113,11 +125,6 @@ async function loadData() {
             };
         }
     }    ).addTo(agePopulationLayer)
-
-    //singaporePopulation.addTo(map);
-    //singaporePopulation.setStyle({
-    //    color: 'navy'
-    //})
     
 }  
 
