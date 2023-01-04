@@ -1,3 +1,26 @@
+const options =  {
+    chart: {
+        type: 'line',
+        height:"100%"
+    },
+    series:[
+        // NO DATA
+    ],
+    // what to show there is no data
+    noData: {
+        "text": "Loading..."
+    }
+   
+    
+}
+
+const chart = new ApexCharts(document.querySelector('#chart'), options);
+
+// render the chart
+chart.render()
+
+
+
 let singapore = [1.34096, 103.8198]; //Singapore latlong
 let map = L.map('map').setView(singapore, 12); //Setting center point
 
@@ -15,7 +38,7 @@ function onLocationFound(e) {
     var radius = e.accuracy;
 
     L.marker(e.latlng).addTo(map)
-        .bindPopup("You are within " + radius + " meters from this point").openPopup();
+        .bindPopup("You are within" + radius + " meters from this point").openPopup();
 
     L.circle(e.latlng, radius).addTo(map);
 }
@@ -62,7 +85,7 @@ function highlightFeature(e) {
 }
  
 function resetHighlight(e) {
-    e.resetStyle(e.target),
+    map.resetStyle(e.target),
     info.update()
 }
 
@@ -147,24 +170,25 @@ async function loadData() {
 
     const agePopulation = L.geoJson(response.data, {
 
-        onEachFeature: function(feature, layer) {
-
-            console.log(feature);
-
-            layer.bindPopup(`
-            <b> Planning Area   : </b> ${feature.properties.planningArea} <br>
-            <b> Sub        : </b> ${feature.properties.subZone} <br>
-            <b> Total Population: </b> ${feature.properties.totalPopulation} <br>
-            `);
-        },
         style: function (feature) {
             return {
                 fillColor: (colorPop(feature.properties.totalPopulation)),
-                weight: 1,
+                weight: 2,
                 opacity: 1,
-                color: "blue",
-                fillOpacity: 0.65
-            };
+                color: "white",
+                dashArray: '3',
+                fillOpacity: 0.7,
+                function: resetHighlight,
+            }
+        },
+        
+        onEachFeature: function(feature, layer) {
+
+            layer.on({
+                mouseover: highlightFeature,
+                mouseout: resetHighlight,
+                click: zoomToFeature
+            })
         }
     }    ).addTo(agePopulationLayer)
     
@@ -173,3 +197,4 @@ async function loadData() {
 
 //.openPopup for search pop up
     //marker cluster
+
