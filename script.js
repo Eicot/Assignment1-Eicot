@@ -189,6 +189,21 @@ async function loadData() {
                 mouseout: resetHighlight,
                 click: zoomToFeature
             })
+
+            console.log(feature);
+
+             layer.bindPopup(`
+             <b> Planning Area   : </b> ${feature.properties.planningArea} <br>
+             <b> Sub        : </b> ${feature.properties.subZone} <br>
+             <b> Total Population: </b> ${feature.properties.totalPopulation} <br>
+             `)
+
+            // layer.bindPopup(`
+			// <b> Subzone: </b> ${feature.properties.SUBZONE_N} <br>
+			// <b> Planning Area: </b> ${feature.properties.PLN_AREA_N} <br>
+			// <b> Population density: </b> ${(feature.properties.Pop_dens).toFixed(1)} <br>
+			// `)
+
         }
     }    ).addTo(agePopulationLayer)
     
