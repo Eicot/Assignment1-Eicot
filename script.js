@@ -53,11 +53,11 @@ map.on('locationerror', onLocationError);
 
 // const singaporePopulationLayer = L.markerClusterGroup().addTo(map);
 const singaporePopulationLayer = L.layerGroup().addTo(map);
-const agePopulationLayer = L.layerGroup().addTo(map);
+const femalePopulationLayer = L.layerGroup().addTo(map);
 
-const layerControl = L.control.layers({
+var layerControl = L.control.layers({
     'Overall Population' : singaporePopulationLayer,
-    'Age Population' : agePopulationLayer
+    'Female Population' : femalePopulationLayer
 }, {}).addTo(map);
 
 function colorPop(d) { 
@@ -135,12 +135,11 @@ legend.onAdd = function (map) {
 
 legend.addTo(map);
 
-
 loadData();
 
 async function loadData() {
 
-    let response = await axios.get("singapore-population-2022.geojson");
+    const response = await axios.get("singapore-population-2022.geojson");
 
     const singaporePopulation = L.geoJson(response.data, {
 
@@ -168,11 +167,11 @@ async function loadData() {
     } ).addTo(singaporePopulationLayer)
 
 
-    const agePopulation = L.geoJson(response.data, {
+    const female = L.geoJson(response.data, {
 
         style: function (feature) {
             return {
-                fillColor: (colorPop(feature.properties.totalPopulation)),
+                fillColor: (colorPop(feature.properties.femalePopulation)),
                 weight: 2,
                 opacity: 1,
                 color: "white",
@@ -195,7 +194,7 @@ async function loadData() {
              layer.bindPopup(`
              <b> Planning Area   : </b> ${feature.properties.planningArea} <br>
              <b> Sub        : </b> ${feature.properties.subZone} <br>
-             <b> Total Population: </b> ${feature.properties.totalPopulation} <br>
+             <b> Total Population: </b> ${feature.properties.femalePopulation} <br>
              `)
 
             // layer.bindPopup(`
@@ -205,7 +204,7 @@ async function loadData() {
 			// `)
 
         }
-    }    ).addTo(agePopulationLayer)
+    }    ).addTo(femalePopulationLayer)
     
 }  
 
