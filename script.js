@@ -1,26 +1,3 @@
-const options =  {
-    chart: {
-        type: 'line',
-        height:"100%"
-    },
-    series:[
-        // NO DATA
-    ],
-    // what to show there is no data
-    noData: {
-        "text": "Loading..."
-    }
-   
-    
-}
-
-const chart = new ApexCharts(document.querySelector('#chart'), options);
-
-// render the chart
-chart.render()
-
-
-
 let singapore = [1.34096, 103.8198]; //Singapore latlong
 let map = L.map('map').setView(singapore, 12); //Setting center point
 
@@ -88,6 +65,7 @@ function resetHighlight(e) {
     map.resetStyle(e.target),
     info.update()
 }
+
 
 function zoomToFeature(e) {
     map.fitBounds(e.target.getBounds());
@@ -189,7 +167,8 @@ async function loadData() {
                 click: zoomToFeature
             })
 
-            console.log(feature);
+
+            // console.log(feature);
 
              layer.bindPopup(`
              <b> Planning Area   : </b> ${feature.properties.planningArea} <br>
@@ -197,16 +176,42 @@ async function loadData() {
              <b> Total Population: </b> ${feature.properties.femalePopulation} <br>
              `)
 
-            // layer.bindPopup(`
-			// <b> Subzone: </b> ${feature.properties.SUBZONE_N} <br>
-			// <b> Planning Area: </b> ${feature.properties.PLN_AREA_N} <br>
-			// <b> Population density: </b> ${(feature.properties.Pop_dens).toFixed(1)} <br>
-			// `)
-
         }
     }    ).addTo(femalePopulationLayer)
+
     
 }  
+
+// const searchControl = new L.Control.Search({
+//     layer: femalePopulationLayer,
+//     propertyName: feature.properties.planningArea
+// })
+
+// map.addControl(searchControl)
+
+
+//Search Button
+// async function main() {
+
+//     init();
+    
+//     function init() {
+//     let map = initMap();
+//     window.addEventListener('DOMContentLoaded', () => {
+        
+//         document.querySelector('#searchBtn').addEventListener('click', async ()=>{
+//             let query = document.querySelector('#searchInput').value;
+            
+//             let center = map.getBounds().getCenter();
+//             let response = await search(center.lat, center.lng, query);
+//             console.log(response);
+//         })
+//     })
+//     console.log(query)
+// }
+// }
+
+// main();
 
 
 //.openPopup for search pop up
