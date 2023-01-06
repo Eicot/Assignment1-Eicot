@@ -139,7 +139,7 @@ loadData();
 
 async function loadData() {
 
-    const response = await axios.get("singapore-population-2022.geojson");
+    const response = await axios.get("singaporePopulation2022.geojson");
 
     const singaporePopulation = L.geoJson(response.data, {
 
