@@ -291,7 +291,41 @@ async function loadData() {
       })
     }
   }).addTo(polygonCenter)
-  return response
+  //SearchControl
+  const searchControl = new L.Control.Search({
+    layer: singaporePopulationLayer,
+    propertyName: 'subZone',
+    marker: {
+      icon: marker1,
+      circle: {
+        radius: 35,
+        color: '#0a0',
+        opacity: 1
+      }
+    },
+    moveToLocation: function(latlng, title, map) {
+      //map.fitBounds( latlng.layer.getBounds() );
+      var zoom = map.getBoundsZoom(latlng.layer.getBounds());
+      map.setView(latlng, zoom); // access the zoom
+    }
+  });
+  searchControl.on('search:locationfound', function(e) {
+
+    console.log('search:locationfound',);
+
+    //map.removeLayer(this._markerSearch)
+
+    e.layer.setStyle({ color: '#0f0' });
+    if (e.layer._popup)
+      e.layer.openPopup();
+
+  }).on('search:collapsed', function(e) {
+
+    featuresLayer.eachLayer(function(layer) {	//restore feature color
+      featuresLayer.resetStyle(layer);
+    });
+  });
+  map.addControl(searchControl);  //inizialize search control
 }
 
 loadData();
@@ -463,51 +497,19 @@ const markerIcon = L.icon({
   iconUrl: "images/popmarker.png",
 
   iconSize: [30, 30], // size of the icon
-  // shadowSize: [10, 10], // size of the shadow
-  // iconAnchor: [15, 15], // point of the icon which will correspond to marker's location
-  // shadowAnchor: [0, 0],  // the same for the shadow
-  // popupAnchor: [0, 0] // point from which the popup should open relative to the iconAnchor
 });
 
-markerIcon.addTo(polygonCenter);
+const marker1 = L.icon({
+  iconUrl: "images/marker2.png",
 
-const searchControl = L.layerGroup().addTo(map);
+  iconSize: [40, 40], // size of the icon
 
-document.querySelector("#searchBtn").addEventListener("click", async function() {
+});
 
-  const searchInput = document.querySelector("#searchTerms").value;
 
-  // console.log(searchInput);
-  // const center = map.getBounds().getCenter();
-  // const ll = center.lat + "," + center.lng;
-  // console.log("1", center, ll)
-  const results = await loadData(searchInput);
-  // console.log("2", results)
-  for (let r of results.data.features) {
-    // const location = r.properties.subZone
-    if (r.geometry.type === "MultiPolygon") {
-      const center = layer.getBounds().getCenter();
-      const marker = L.marker(center);
-      marker.addTo(polygonCenter)
-    }
 
-    marker.addTo(searchControl)
 
-  }
-}
 
-  // for (let r of results.data.features) {
-  //   if (r.properties.subZone === "subZone")
-  //   const lat = r.geometry.coordinates[0][0][0][1]
-  //   const lngs = r.geometry.coordinates[0][0][0][0]
-  //   const marker = L.marker([lat, lngs]);
-  //   console.log(marker)
-  //   marker.addTo(map);
-  // }
-);
 
-// if (feature.geometry.type === 'MultiPolygon') {
-//         var center = layer.getBounds().getCenter();
-//         var marker = L.marker(center);
-//         marker.addTo(polygonCenter)
-//       }
+
+

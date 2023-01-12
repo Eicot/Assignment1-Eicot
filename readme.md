@@ -53,7 +53,6 @@
 </details>
 
 
-
 <!-- ABOUT THE PROJECT -->
 ## Project Introduction
 

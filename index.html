@@ -15,6 +15,7 @@
 
   <link rel="stylesheet" href="Leaflet.markercluster-1.4.1/dist/MarkerCluster.Default.css" />
 
+  <link rel="stylesheet" href="leaflet-search-master/dist/leaflet-search.src.css" />
 
 
   <!-- Style Sheet -->
@@ -28,73 +29,91 @@
 <body>
   <div id="main">
 
-  <!-- Nav Bar for Logo/Name and dropdown for Info Chart and Search Button-->
-  <nav class="navbar navbar-expand-lg navbar bg-body-tertiary">
+    <!-- Nav Bar for Logo/Name and dropdown for Info Chart and Search Button-->
+    <nav class="navbar navbar-expand-lg navbar bg-body-tertiary">
 
-    <div class="container-fluid">
+      <div class="container-fluid">
 
-      <a class="navbar-brand" href="#main"><img src="images/population1.jpg" width=200 height=50></a>
+        <a class="navbar-brand" href="#main"><img src="images/population3.jpg" width=70 height=50>SINGAPORE
+          POPULATION
+        </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainbar"
-        aria-controls="mainbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="mainbar">
-
-        <button class="btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-          aria-expanded="false" aria-controls="collapseExample">
-          Information Chart
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainbar"
+          aria-controls="mainbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="d-flex">
-          <input class="form-control me-2" id="searchTerms" type="text" placeholder="Search Sub Zones"
-            aria-label="Search">
-          <button class="btn btn-outline-success" id="searchBtn">Search</button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainbar">
+
+          <button class="btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#chart1-1"
+            aria-expanded="false" aria-controls="chart1-1">
+            Population (1960-2021)
+          </button>
+
+          <button class="btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#chart2-1"
+            aria-expanded="false" aria-controls="chart2-1">
+            Population Rate(1960-2021)
+          </button>
+
+          <button class="btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#mixedchart1-1"
+            aria-expanded="false" aria-controls="mixedchart1-1">
+            Overview
+          </button>
+
+
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Map div and Chart inside map-->
-  <div id="map">
+    <!-- Map div and Chart inside map-->
+    <div id="map">
 
-    <div class="content-area">
+      <div class="content-area">
+        <div class="container">
+          <div class="collapse" id="chart1-1">
 
-      <div class="container">
-
-        <div class="collapse" id="collapseExample">
-
-          <div class="row mt-4">
-            <div class="col-md-6">
-              <div class="box shadow mt-4">
-                <div id="chart1"></div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="box shadow mt-4">
-                <div id="chart2" class=""></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row mt-4">
-            <div class="col-md-8">
-              <div class="box shadow mt-4">
-                <div id="mixedchart1"></div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="box shadow mt-4">
-                <div id="pie1"></div>
+            <div class="row mt-5">
+              <div class="col-md-12">
+                <div class="box shadow mt-3">
+                  <div id="chart1"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-  </div>
+      <div class="content-area">
+        <div class="container">
+          <div class="collapse" id="chart2-1">
+
+            <div class="row mt-5">
+              <div class="col-md-12">
+                <div class="box shadow mt-3">
+                  <div id="chart2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-area">
+        <div class="container">
+          <div class="collapse" id="mixedchart1-1">
+
+            <div class="row-mt-5">
+              <div class="col-md-12">
+                <div class="box shadow mt-3">
+                  <div id="mixedchart1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 
 
@@ -120,8 +139,9 @@
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
+  <script src="leaflet-search-master/dist/leaflet-search.src.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="singaporePopulation2022.js"></script>
 
   <!-- JavaScript -->
 
