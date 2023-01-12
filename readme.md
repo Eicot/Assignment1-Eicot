@@ -68,10 +68,10 @@ The Singapore Population is to visualize the raw data of population with Leaflet
 
 The list below is used for developing map and chart.
 
-* [![Leaflet]][leaflet-url]
-* [![ApexCharts]][ApexCharts-url]
-* [![Axios][Axios.com]][Axios-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [Leaflet][leaflet-url]
+* [ApexCharts][ApexCharts-url]
+* [Axios][Axios-url]
+* [Bootstrap][Bootstrap-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,9 +88,7 @@ The list below is used for developing map and chart.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-
 ### Setting Up Base Map
-
 
 * The latest stable Leaflet release is available on several CDN’s — to start using it straight away, place this in the head of your HTML code:
   ```sh
@@ -114,6 +112,8 @@ The list below is used for developing map and chart.
   accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw' //demo access token}).addTo(map);
   ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ### Setting Up ApexCharts
 
@@ -136,12 +136,13 @@ The list below is used for developing map and chart.
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
   ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This section will show useful examples of how a project can be used.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
