@@ -8,21 +8,25 @@
   "populationFemalePercentage": 49.6545142369615,
   "populatonMalePercentage": 50.3454857630386,
   "populationTotal": 1646400,
-  "populationgrowth": "..",
-  "populationDensity": "..",
+  "populationgrowth": 3.34479340675401,
+  "populationDensity": 2540.89552238806,
   "population65aboveMale": 9304,
   "population65aboveMalepercentage": 1.12242043344844,
   "population65abovefemale": 17496,
   "population65aboveFemalePercentage": 2.14010425052326,
   "population65aboveTotalPercentage": 1.6277465470931,
   "population65aboveTotal": 26799,
-  "populationgrowthUrban": "..",
+  "populationgrowthUrban": 3.3447934067540124,
   "birthRate": 37.5,
   "fertilityRateTotalBirthsPerWoman": 5.76,
   "deathRatecperthousandpeople": 6.2,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 2937,
+  "populationages014total": 745560,
+  "populationages1564total": 874041,
+  "populationages65andabovetotal": 26799
  },
  {
   "country": "Singapore",
@@ -47,7 +51,11 @@
   "deathRatecperthousandpeople": 5.9,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 2665,
+  "populationages014total": 778548,
+  "populationages1564total": 894555,
+  "populationages65andabovetotal": 29297
  },
  {
   "country": "Singapore",
@@ -72,7 +80,11 @@
   "deathRatecperthousandpeople": 5.8,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 2431,
+  "populationages014total": 801938,
+  "populationages1564total": 916054,
+  "populationages65andabovetotal": 32208
  },
  {
   "country": "Singapore",
@@ -97,7 +109,11 @@
   "deathRatecperthousandpeople": 5.6,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 2239,
+  "populationages014total": 819360,
+  "populationages1564total": 940018,
+  "populationages65andabovetotal": 35622
  },
  {
   "country": "Singapore",
@@ -122,7 +138,11 @@
   "deathRatecperthousandpeople": 5.7,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 2087,
+  "populationages014total": 833616,
+  "populationages1564total": 968493,
+  "populationages65andabovetotal": 39491
  },
  {
   "country": "Singapore",
@@ -147,7 +167,11 @@
   "deathRatecperthousandpeople": 5.4,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 1956,
+  "populationages014total": 843172,
+  "populationages1564total": 1000037,
+  "populationages65andabovetotal": 43691
  },
  {
   "country": "Singapore",
@@ -172,7 +196,11 @@
   "deathRatecperthousandpeople": 5.4,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 1820,
+  "populationages014total": 849055,
+  "populationages1564total": 1036938,
+  "populationages65andabovetotal": 48407
  },
  {
   "country": "Singapore",
@@ -197,7 +225,11 @@
   "deathRatecperthousandpeople": 5.3,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 1674,
+  "populationages014total": 848939,
+  "populationages1564total": 1075168,
+  "populationages65andabovetotal": 53492
  },
  {
   "country": "Singapore",
@@ -222,7 +254,11 @@
   "deathRatecperthousandpeople": 5.5,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 1539,
+  "populationages014total": 841076,
+  "populationages1564total": 1112050,
+  "populationages65andabovetotal": 58874
  },
  {
   "country": "Singapore",
@@ -247,7 +283,11 @@
   "deathRatecperthousandpeople": 5,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 1428,
+  "populationages014total": 826753,
+  "populationages1564total": 1151320,
+  "populationages65andabovetotal": 64426
  },
  {
   "country": "Singapore",
@@ -272,7 +312,11 @@
   "deathRatecperthousandpeople": 5.2,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 1336,
+  "populationages014total": 812362,
+  "populationages1564total": 1193265,
+  "populationages65andabovetotal": 68880
  },
  {
   "country": "Singapore",
@@ -297,7 +341,11 @@
   "deathRatecperthousandpeople": 5.4,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 1250,
+  "populationages014total": 801429,
+  "populationages1564total": 1238902,
+  "populationages65andabovetotal": 72569
  },
  {
   "country": "Singapore",
@@ -322,7 +370,11 @@
   "deathRatecperthousandpeople": 5.4,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 1155,
+  "populationages014total": 790034,
+  "populationages1564total": 1285773,
+  "populationages65andabovetotal": 76592
  },
  {
   "country": "Singapore",
@@ -347,7 +399,11 @@
   "deathRatecperthousandpeople": 5.4,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 1037,
+  "populationages014total": 778346,
+  "populationages1564total": 1333513,
+  "populationages65andabovetotal": 81141
  },
  {
   "country": "Singapore",
@@ -372,7 +428,11 @@
   "deathRatecperthousandpeople": 5.2,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 896,
+  "populationages014total": 763319,
+  "populationages1564total": 1380456,
+  "populationages65andabovetotal": 86025
  },
  {
   "country": "Singapore",
@@ -397,7 +457,11 @@
   "deathRatecperthousandpeople": 5.1,
   "employmentpopulationratio": "..",
   "employment": 55.0699996948242,
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 764,
+  "populationages014total": 744151,
+  "populationages1564total": 1427255,
+  "populationages65andabovetotal": 91193
  },
  {
   "country": "Singapore",
@@ -422,7 +486,11 @@
   "deathRatecperthousandpeople": 5.1,
   "employmentpopulationratio": "..",
   "employment": 55.4599990844727,
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 676,
+  "populationages014total": 724785,
+  "populationages1564total": 1471863,
+  "populationages65andabovetotal": 96652
  },
  {
   "country": "Singapore",
@@ -447,7 +515,11 @@
   "deathRatecperthousandpeople": 5.1,
   "employmentpopulationratio": "..",
   "employment": 56.439998626709,
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 635,
+  "populationages014total": 707018,
+  "populationages1564total": 1516025,
+  "populationages65andabovetotal": 102257
  },
  {
   "country": "Singapore",
@@ -472,7 +544,11 @@
   "deathRatecperthousandpeople": 5.1,
   "employmentpopulationratio": "..",
   "employment": 57.8899993896484,
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 619,
+  "populationages014total": 687734,
+  "populationages1564total": 1558186,
+  "populationages65andabovetotal": 107681
  },
  {
   "country": "Singapore",
@@ -497,7 +573,11 @@
   "deathRatecperthousandpeople": 5.2,
   "employmentpopulationratio": "..",
   "employment": 58.3199996948242,
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 609,
+  "populationages014total": 669851,
+  "populationages1564total": 1600865,
+  "populationages65andabovetotal": 112785
  },
  {
   "country": "Singapore",
@@ -522,7 +602,11 @@
   "deathRatecperthousandpeople": 4.9,
   "employmentpopulationratio": "..",
   "employment": 60.7799987792969,
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 596,
+  "populationages014total": 653726,
+  "populationages1564total": 1642980,
+  "populationages65andabovetotal": 117239
  },
  {
   "country": "Singapore",
@@ -547,7 +631,11 @@
   "deathRatecperthousandpeople": 4.9,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 576,
+  "populationages014total": 664116,
+  "populationages1564total": 1743157,
+  "populationages65andabovetotal": 125563
  },
  {
   "country": "Singapore",
@@ -572,7 +660,11 @@
   "deathRatecperthousandpeople": 4.9,
   "employmentpopulationratio": "..",
   "employment": 66.0999984741211,
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 548,
+  "populationages014total": 675898,
+  "populationages1564total": 1836934,
+  "populationages65andabovetotal": 133634
  },
  {
   "country": "Singapore",
@@ -597,7 +689,11 @@
   "deathRatecperthousandpeople": 5,
   "employmentpopulationratio": "..",
   "employment": 66.1600036621094,
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 523,
+  "populationages014total": 670375,
+  "populationages1564total": 1872841,
+  "populationages65andabovetotal": 137845
  },
  {
   "country": "Singapore",
@@ -622,7 +718,11 @@
   "deathRatecperthousandpeople": 4.8,
   "employmentpopulationratio": "..",
   "employment": 66.6600036621094,
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 504,
+  "populationages014total": 671198,
+  "populationages1564total": 1918245,
+  "populationages65andabovetotal": 142777
  },
  {
   "country": "Singapore",
@@ -647,7 +747,11 @@
   "deathRatecperthousandpeople": 4.9,
   "employmentpopulationratio": "..",
   "employment": 63.810001373291,
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 493,
+  "populationages014total": 659596,
+  "populationages1564total": 1931394,
+  "populationages65andabovetotal": 144967
  },
  {
   "country": "Singapore",
@@ -672,7 +776,11 @@
   "deathRatecperthousandpeople": 4.6,
   "employmentpopulationratio": "..",
   "employment": 61.5699996948242,
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 485,
+  "populationages014total": 644277,
+  "populationages1564total": 1942528,
+  "populationages65andabovetotal": 146569
  },
  {
   "country": "Singapore",
@@ -697,7 +805,11 @@
   "deathRatecperthousandpeople": 4.7,
   "employmentpopulationratio": "..",
   "employment": 63.4199981689453,
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 475,
+  "populationages014total": 638598,
+  "populationages1564total": 1985752,
+  "populationages65andabovetotal": 150439
  },
  {
   "country": "Singapore",
@@ -722,7 +834,11 @@
   "deathRatecperthousandpeople": 4.9,
   "employmentpopulationratio": "..",
   "employment": 65.3600006103516,
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 460,
+  "populationages014total": 639576,
+  "populationages1564total": 2050571,
+  "populationages65andabovetotal": 155962
  },
  {
   "country": "Singapore",
@@ -747,7 +863,11 @@
   "deathRatecperthousandpeople": 4.9,
   "employmentpopulationratio": "..",
   "employment": 67.4300003051758,
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 437,
+  "populationages014total": 643221,
+  "populationages1564total": 2125309,
+  "populationages65andabovetotal": 162371
  },
  {
   "country": "Singapore",
@@ -772,7 +892,11 @@
   "deathRatecperthousandpeople": 4.7,
   "employmentpopulationratio": "..",
   "employment": "..",
-  "selfEmployed": ".."
+  "selfEmployed": "..",
+  "numberofunderfivedeaths": 408,
+  "populationages014total": 657517,
+  "populationages1564total": 2219211,
+  "populationages65andabovetotal": 170404
  },
  {
   "country": "Singapore",
@@ -797,7 +921,11 @@
   "deathRatecperthousandpeople": 4.6,
   "employmentpopulationratio": 63.0040016174316,
   "employment": 48.6800003051758,
-  "selfEmployed": 13.3500003814697
+  "selfEmployed": 13.3500003814697,
+  "numberofunderfivedeaths": 377,
+  "populationages014total": 672718,
+  "populationages1564total": 2285930,
+  "populationages65andabovetotal": 176435
  },
  {
   "country": "Singapore",
@@ -822,7 +950,11 @@
   "deathRatecperthousandpeople": 4.7,
   "employmentpopulationratio": 62.5699996948242,
   "employment": 55.2299995422363,
-  "selfEmployed": 13.539999961853
+  "selfEmployed": 13.539999961853,
+  "numberofunderfivedeaths": 348,
+  "populationages014total": 690477,
+  "populationages1564total": 2357270,
+  "populationages65andabovetotal": 182951
  },
  {
   "country": "Singapore",
@@ -847,7 +979,11 @@
   "deathRatecperthousandpeople": 4.6,
   "employmentpopulationratio": 62.5270004272461,
   "employment": 54.4599990844727,
-  "selfEmployed": 13.5699996948242
+  "selfEmployed": 13.5699996948242,
+  "numberofunderfivedeaths": 322,
+  "populationages014total": 701615,
+  "populationages1564total": 2422696,
+  "populationages65andabovetotal": 189161
  },
  {
   "country": "Singapore",
@@ -872,7 +1008,11 @@
   "deathRatecperthousandpeople": 4.7,
   "employmentpopulationratio": 62.7789993286133,
   "employment": 54.2799987792969,
-  "selfEmployed": 13.6599998474121
+  "selfEmployed": 13.6599998474121,
+  "numberofunderfivedeaths": 301,
+  "populationages014total": 714592,
+  "populationages1564total": 2507124,
+  "populationages65andabovetotal": 197331
  },
  {
   "country": "Singapore",
@@ -897,7 +1037,11 @@
   "deathRatecperthousandpeople": 4.8,
   "employmentpopulationratio": 63.0390014648438,
   "employment": 50.8300018310547,
-  "selfEmployed": 11.5500001907349
+  "selfEmployed": 11.5500001907349,
+  "numberofunderfivedeaths": 284,
+  "populationages014total": 729116,
+  "populationages1564total": 2589194,
+  "populationages65andabovetotal": 206196
  },
  {
   "country": "Singapore",
@@ -922,7 +1066,11 @@
   "deathRatecperthousandpeople": 4.7,
   "employmentpopulationratio": 63.0530014038086,
   "employment": 52.5,
-  "selfEmployed": 14.6800003051758
+  "selfEmployed": 14.6800003051758,
+  "numberofunderfivedeaths": 269,
+  "populationages014total": 756289,
+  "populationages1564total": 2696853,
+  "populationages65andabovetotal": 217561
  },
  {
   "country": "Singapore",
@@ -947,7 +1095,11 @@
   "deathRatecperthousandpeople": 4.5,
   "employmentpopulationratio": 63.9169998168945,
   "employment": 51.3600006103516,
-  "selfEmployed": 13.9499998092651
+  "selfEmployed": 13.9499998092651,
+  "numberofunderfivedeaths": 255,
+  "populationages014total": 776737,
+  "populationages1564total": 2791564,
+  "populationages65andabovetotal": 227737
  },
  {
   "country": "Singapore",
@@ -972,7 +1124,11 @@
   "deathRatecperthousandpeople": 4.6,
   "employmentpopulationratio": 63.734001159668,
   "employment": 49.4099998474121,
-  "selfEmployed": 14.5100002288818
+  "selfEmployed": 14.5100002288818,
+  "numberofunderfivedeaths": 239,
+  "populationages014total": 790063,
+  "populationages1564total": 2898377,
+  "populationages65andabovetotal": 238773
  },
  {
   "country": "Singapore",
@@ -997,7 +1153,11 @@
   "deathRatecperthousandpeople": 4.5,
   "employmentpopulationratio": 62.6660003662109,
   "employment": 61,
-  "selfEmployed": 15.6000003814697
+  "selfEmployed": 15.6000003814697,
+  "numberofunderfivedeaths": 220,
+  "populationages014total": 774621,
+  "populationages1564total": 2939540,
+  "populationages65andabovetotal": 244562
  },
  {
   "country": "Singapore",
@@ -1022,7 +1182,11 @@
   "deathRatecperthousandpeople": 4.5,
   "employmentpopulationratio": 63.5480003356934,
   "employment": 59.4300003051758,
-  "selfEmployed": 15.3800001144409
+  "selfEmployed": 15.3800001144409,
+  "numberofunderfivedeaths": 200,
+  "populationages014total": 768606,
+  "populationages1564total": 3004812,
+  "populationages65andabovetotal": 254469
  },
  {
   "country": "Singapore",
@@ -1047,7 +1211,11 @@
   "deathRatecperthousandpeople": 4.3,
   "employmentpopulationratio": 63.6339988708496,
   "employment": 62,
-  "selfEmployed": 15.3699998855591
+  "selfEmployed": 15.3699998855591,
+  "numberofunderfivedeaths": 181,
+  "populationages014total": 782896,
+  "populationages1564total": 3085847,
+  "populationages65andabovetotal": 269270
  },
  {
   "country": "Singapore",
@@ -1072,7 +1240,11 @@
   "deathRatecperthousandpeople": 4.4,
   "employmentpopulationratio": 61.6290016174316,
   "employment": 60,
-  "selfEmployed": 15.1499996185303
+  "selfEmployed": 15.1499996185303,
+  "numberofunderfivedeaths": 165,
+  "populationages014total": 785812,
+  "populationages1564total": 3110106,
+  "populationages65andabovetotal": 280032
  },
  {
   "country": "Singapore",
@@ -1097,7 +1269,11 @@
   "deathRatecperthousandpeople": 4.5,
   "employmentpopulationratio": 61.4469985961914,
   "employment": 59.5,
-  "selfEmployed": 14.9399995803833
+  "selfEmployed": 14.9399995803833,
+  "numberofunderfivedeaths": 153,
+  "populationages014total": 761879,
+  "populationages1564total": 3070554,
+  "populationages65andabovetotal": 282393
  },
  {
   "country": "Singapore",
@@ -1122,7 +1298,11 @@
   "deathRatecperthousandpeople": 4.4,
   "employmentpopulationratio": 61.4389991760254,
   "employment": 59.5999984741211,
-  "selfEmployed": 15.5600004196167
+  "selfEmployed": 15.5600004196167,
+  "numberofunderfivedeaths": 144,
+  "populationages014total": 750214,
+  "populationages1564total": 3126556,
+  "populationages65andabovetotal": 289894
  },
  {
   "country": "Singapore",
@@ -1147,7 +1327,11 @@
   "deathRatecperthousandpeople": 4.4,
   "employmentpopulationratio": 62.2060012817383,
   "employment": "..",
-  "selfEmployed": 15.3500003814697
+  "selfEmployed": 15.3500003814697,
+  "numberofunderfivedeaths": 138,
+  "populationages014total": 743564,
+  "populationages1564total": 3223642,
+  "populationages65andabovetotal": 298557
  },
  {
   "country": "Singapore",
@@ -1172,7 +1356,11 @@
   "deathRatecperthousandpeople": 4.4,
   "employmentpopulationratio": 63.5419998168945,
   "employment": 62.1100006103516,
-  "selfEmployed": 15.1000003814697
+  "selfEmployed": 15.1000003814697,
+  "numberofunderfivedeaths": 135,
+  "populationages014total": 745722,
+  "populationages1564total": 3347514,
+  "populationages65andabovetotal": 308129
  },
  {
   "country": "Singapore",
@@ -1197,7 +1385,11 @@
   "deathRatecperthousandpeople": 4.5,
   "employmentpopulationratio": 64.5309982299805,
   "employment": 61.2400016784668,
-  "selfEmployed": 15.3800001144409
+  "selfEmployed": 15.3800001144409,
+  "numberofunderfivedeaths": 134,
+  "populationages014total": 753280,
+  "populationages1564total": 3514737,
+  "populationages65andabovetotal": 320582
  },
  {
   "country": "Singapore",
@@ -1222,7 +1414,11 @@
   "deathRatecperthousandpeople": 4.4,
   "employmentpopulationratio": 65.5279998779297,
   "employment": 63.0200004577637,
-  "selfEmployed": 15.0799999237061
+  "selfEmployed": 15.0799999237061,
+  "numberofunderfivedeaths": 135,
+  "populationages014total": 761482,
+  "populationages1564total": 3740067,
+  "populationages65andabovetotal": 337847
  },
  {
   "country": "Singapore",
@@ -1247,7 +1443,11 @@
   "deathRatecperthousandpeople": 4.3,
   "employmentpopulationratio": 64.2600021362305,
   "employment": 61.5999984741211,
-  "selfEmployed": 14.75
+  "selfEmployed": 14.75,
+  "numberofunderfivedeaths": 136,
+  "populationages014total": 744416,
+  "populationages1564total": 3892872,
+  "populationages65andabovetotal": 350285
  },
  {
   "country": "Singapore",
@@ -1272,7 +1472,11 @@
   "deathRatecperthousandpeople": 4.4,
   "employmentpopulationratio": 65.9940032958984,
   "employment": 63.4900016784668,
-  "selfEmployed": 14.5
+  "selfEmployed": 14.5,
+  "numberofunderfivedeaths": 138,
+  "populationages014total": 723482,
+  "populationages1564total": 3987655,
+  "populationages65andabovetotal": 365594
  },
  {
   "country": "Singapore",
@@ -1297,7 +1501,11 @@
   "deathRatecperthousandpeople": 4.5,
   "employmentpopulationratio": 66.4309997558594,
   "employment": 63.4799995422363,
-  "selfEmployed": 15
+  "selfEmployed": 15,
+  "numberofunderfivedeaths": 139,
+  "populationages014total": 723189,
+  "populationages1564total": 4070632,
+  "populationages65andabovetotal": 389867
  },
  {
   "country": "Singapore",
@@ -1322,7 +1530,11 @@
   "deathRatecperthousandpeople": 4.5,
   "employmentpopulationratio": 67.2129974365234,
   "employment": 64.120002746582,
-  "selfEmployed": 15.3199996948242
+  "selfEmployed": 15.3199996948242,
+  "numberofunderfivedeaths": 139,
+  "populationages014total": 732890,
+  "populationages1564total": 4161359,
+  "populationages65andabovetotal": 418188
  },
  {
   "country": "Singapore",
@@ -1347,7 +1559,11 @@
   "deathRatecperthousandpeople": 4.6,
   "employmentpopulationratio": 67.1539993286133,
   "employment": 64.129997253418,
-  "selfEmployed": 14.9200000762939
+  "selfEmployed": 14.9200000762939,
+  "numberofunderfivedeaths": 139,
+  "populationages014total": 730317,
+  "populationages1564total": 4226257,
+  "populationages65andabovetotal": 442588
  },
  {
   "country": "Singapore",
@@ -1372,7 +1588,11 @@
   "deathRatecperthousandpeople": 4.7,
   "employmentpopulationratio": 67.9800033569336,
   "employment": 64.5199966430664,
-  "selfEmployed": 14.6199998855591
+  "selfEmployed": 14.6199998855591,
+  "numberofunderfivedeaths": 139,
+  "populationages014total": 717930,
+  "populationages1564total": 4286396,
+  "populationages65andabovetotal": 465398
  },
  {
   "country": "Singapore",
@@ -1397,7 +1617,11 @@
   "deathRatecperthousandpeople": 4.8,
   "employmentpopulationratio": 68.6750030517578,
   "employment": 65.75,
-  "selfEmployed": 13.9899997711182
+  "selfEmployed": 13.9899997711182,
+  "numberofunderfivedeaths": 139,
+  "populationages014total": 703682,
+  "populationages1564total": 4337457,
+  "populationages65andabovetotal": 493864
  },
  {
   "country": "Singapore",
@@ -1422,7 +1646,11 @@
   "deathRatecperthousandpeople": 4.8,
   "employmentpopulationratio": 68.1900024414063,
   "employment": 65.25,
-  "selfEmployed": 14.1300001144409
+  "selfEmployed": 14.1300001144409,
+  "numberofunderfivedeaths": 137,
+  "populationages014total": 697735,
+  "populationages1564total": 4373213,
+  "populationages65andabovetotal": 536335
  },
  {
   "country": "Singapore",
@@ -1447,7 +1675,11 @@
   "deathRatecperthousandpeople": 5,
   "employmentpopulationratio": 67.9990005493164,
   "employment": 64.870002746582,
-  "selfEmployed": 14.6499996185303
+  "selfEmployed": 14.6499996185303,
+  "numberofunderfivedeaths": 134,
+  "populationages014total": 689926,
+  "populationages1564total": 4340011,
+  "populationages65andabovetotal": 582316
  },
  {
   "country": "Singapore",
@@ -1472,7 +1704,11 @@
   "deathRatecperthousandpeople": 5,
   "employmentpopulationratio": 68.056999206543,
   "employment": 65.0800018310547,
-  "selfEmployed": 14.0299997329712
+  "selfEmployed": 14.0299997329712,
+  "numberofunderfivedeaths": 128,
+  "populationages014total": 688331,
+  "populationages1564total": 4315261,
+  "populationages65andabovetotal": 635084
  },
  {
   "country": "Singapore",
@@ -1497,7 +1733,11 @@
   "deathRatecperthousandpeople": 5,
   "employmentpopulationratio": 68.5830001831055,
   "employment": 65.1699981689453,
-  "selfEmployed": 13.460000038147
+  "selfEmployed": 13.460000038147,
+  "numberofunderfivedeaths": 120,
+  "populationages014total": 696271,
+  "populationages1564total": 4311715,
+  "populationages65andabovetotal": 695583
  },
  {
   "country": "Singapore",
@@ -1522,7 +1762,11 @@
   "deathRatecperthousandpeople": 5.2,
   "employmentpopulationratio": 66.2799987792969,
   "employment": 64.5,
-  "selfEmployed": ".."
+  "selfEmployed": 13.460000038147,
+  "numberofunderfivedeaths": 112,
+  "populationages014total": 690929,
+  "populationages1564total": 4246955,
+  "populationages65andabovetotal": 747922
  },
  {
   "country": "Singapore",
@@ -1534,7 +1778,7 @@
   "populatonMalePercentage": 52.3053966800537,
   "populationTotal": 5453566,
   "populationgrowth": -4.17033630017526,
-  "populationDensity": "..",
+  "populationDensity": 7918.951253481894,
   "population65aboveMale": 373323,
   "population65aboveMalepercentage": 13.0875169408934,
   "population65abovefemale": 397047,
@@ -1542,11 +1786,15 @@
   "population65aboveTotalPercentage": 14.1259881127284,
   "population65aboveTotal": 770370,
   "populationgrowthUrban": -4.170336300175264,
-  "birthRate": "..",
-  "fertilityRateTotalBirthsPerWoman": "..",
-  "deathRatecperthousandpeople": "..",
+  "birthRate": 8.5,
+  "fertilityRateTotalBirthsPerWoman": 1.1,
+  "deathRatecperthousandpeople": 5,
   "employmentpopulationratio": 66.0579986572266,
   "employment": 67.5199966430664,
-  "selfEmployed": ".."
+  "selfEmployed": 13.460000038147,
+  "numberofunderfivedeaths": 100,
+  "populationages014total": 654053,
+  "populationages1564total": 4029143,
+  "populationages65andabovetotal": 770370
  }
 ]

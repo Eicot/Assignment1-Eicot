@@ -5,11 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Document</title>
+  <title>Population in Singapore</title>
+
+  <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Leaflet.markercluster-1.4.1/dist/MarkerCluster.css" />
+
+  <link rel="stylesheet" href="Leaflet.markercluster-1.4.1/dist/MarkerCluster.Default.css" />
+
+
+
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="style.css" />
 
   <!-- Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,58 +26,81 @@
 </head>
 
 <body>
-  <!-- <p>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" postion:center>
-              Link with href
-            </a>
-          </p> -->
+  <div class="container" id="main">
 
-  <!--   <div style="height:20vh">
-    <div id="chart1"></div>
-  </div>
+  <!-- Nav Bar for Logo/Name and dropdown for Info Chart and Search Button-->
+  <nav class="navbar navbar-expand-lg navbar bg-body-tertiary">
 
-  <div style="height:20vh">
-    <div id="chart2"></div>
-  </div>
+    <div class="container-fluid">
 
-  <div style="height:20vh">
-    <div id="pie1"></div>
-  </div> -->
+      <a class="navbar-brand" href="#main"><img src="images/population1.jpg" width=200 height=50></a>
 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainbar"
+        aria-controls="mainbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="mainbar">
+
+        <button class="btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+          aria-expanded="false" aria-controls="collapseExample">
+          Information Chart
+        </button>
+
+        <div class="d-flex">
+          <input class="form-control me-2" id="searchTerms" type="text" placeholder="Search Sub Zones"
+            aria-label="Search">
+          <button class="btn btn-outline-success" id="searchBtn">Search</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Map div and Chart inside map-->
   <div id="map">
-    <div class="section-title">
-      <button class="btn btn-primary">Users</button>
-    </div>
-    <div id="charts-container">
 
+    <div class="content-area">
 
-      <div style="height:20vh">
-        <div id="chart1"></div>
+      <div class="container">
+
+        <div class="collapse" id="collapseExample">
+
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <div class="box shadow mt-4">
+                <div id="chart1"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="box shadow mt-4">
+                <div id="chart2" class=""></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-8">
+              <div class="box shadow mt-4">
+                <div id="mixedchart1"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box shadow mt-4">
+                <div id="pie1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div style="height:20vh">
-        <div id="chart2"></div>
-      </div>
-
-      <div style="height:20vh">
-        <div id="pie1"></div>
-      </div>
-
     </div>
 
-    <div id="searchContainer">
-      <input id="searchInput" type="text" />
-      <button id="searchBtn">Search</button>
-    </div>
-
-
-
+  </div>
   </div>
 
 
-
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  <!-- Bootstrap-->
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.
+  <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
@@ -88,13 +120,16 @@
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
+
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
   <!-- JavaScript -->
 
-  <script src="script.js"></script>
+  <script src="Leaflet.markercluster-1.4.1/dist/leaflet.markercluster-src.js"></script>
+  <script src="Leaflet.markercluster-1.4.1/src/MarkerCluster.js"></script>
   <script src="data.js"></script>
   <script src="graph.js"></script>
+  <script src="script.js"></script>
 
 </body>
 
