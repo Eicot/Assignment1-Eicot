@@ -64,15 +64,34 @@ The Singapore Population is to visualize the raw data of population with Leaflet
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 ### Built With
 
-* [![Leaflet][leaflet.js]][leaflet-url]
-* [![ApexCharts][ApexCharts.js]][ApexCharts-url]
+* [![Leaflet]][leaflet-url]
+* [![ApexCharts]][ApexCharts-url]
+* [![Axios]][Axios-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+### Data Sources
+
+* Singapore Residents by Planning Area Subzone, Age Group, Sex and Type of Dwelling, June 2011-2019. This data set is available at [Singapore Department of Statistics](https://www.singstat.gov.sg/find-data/search-by-theme/population/population-and-population-structure/latest-data).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -216,13 +235,13 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [JQuery-url]: https://jquery.com 
 
 
-[Product Name Screen Shot]: images/population1.jpg
+[product-screenshot]: images/population1.jpg
 
-[leaflet.js]: https://leafletjs.com/docs/images/logo.png
 [leaflet-url]:https://leafletjs.com
-[ApexCharts-url]:https://apexcharts.com
 [ApexCharts-url]:https://apexcharts.com
 [Bootstrap-url]: https://getbootstrap.com
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Axios-url]: https://axios-http.com/docs/intro
 [Axios.com]: [https://axios-http.com/docs/intro](https://axios-http.com/assets/logo.svg)
+
+
