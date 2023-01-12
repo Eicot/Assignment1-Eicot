@@ -221,6 +221,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [leaflet.js]: https://leafletjs.com/docs/images/logo.png
 [leaflet-url]:https://leafletjs.com
 [ApexCharts-url]:https://apexcharts.com
+[ApexCharts-url]:https://apexcharts.com
 [Bootstrap-url]: https://getbootstrap.com
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Axios-url]: https://axios-http.com/docs/intro
