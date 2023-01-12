@@ -219,7 +219,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [JQuery-url]: https://jquery.com 
 
 
-[Product Name Screen Shot]: https://replit.com/@Eicot/Assignment1-Eicot#images/population1.jpg
+[Product Name Screen Shot]: images/population1.jpg
 [leaflet-url]:https://leafletjs.com
 [ApexCharts-url]:https://apexcharts.com
 [Bootstrap-url]: https://getbootstrap.com
