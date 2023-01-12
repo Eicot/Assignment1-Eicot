@@ -56,10 +56,9 @@
 <!-- ABOUT THE PROJECT -->
 ## Project Introduction
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://assignment1-eicot.eicot.repl.co)
 
-The Population in Brief is an annual publication that provides data and key updates on Singapore’s population trends.
-The publication covers the various areas that contribute to a sustainable population that has a strong and cohesive society with Singaporeans at its heart, a dynamic and vibrant economy to provide good jobs and opportunities for Singaporeans, and a high quality living environment and home for all Singaporeans.
+The Singapore Population is to visualize the raw data of population with Leaflet Map and ApexCharts. The project lay outs population information categorized by gender, age and residence type, and reveal the demographic structure of Singapore based on planning area in 2022. It also provides information chart to better analyze the population trend by developing line chart with different categories such as growth rate, birth rate, death rate and etc. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -220,6 +219,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [JQuery-url]: https://jquery.com 
 
 
+[Product Name Screen Shot]: images/population1.jpg
 [leaflet-url]:https://leafletjs.com
 [ApexCharts-url]:https://apexcharts.com
 [Bootstrap-url]: https://getbootstrap.com
