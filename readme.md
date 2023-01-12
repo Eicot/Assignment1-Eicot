@@ -33,6 +33,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Data Sources</a></li>
       </ul>
     </li>
     <li>
@@ -66,12 +67,8 @@ The Singapore Population is to visualize the raw data of population with Leaflet
 
 ### Built With
 
-* [![Next][leaflet.js]][leaflet-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
+* [![Leaflet][leaflet.js]][leaflet-url]
+* [![ApexCharts][ApexCharts.js]][ApexCharts-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 
@@ -214,12 +211,17 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [Svelte-url]: https://svelte.dev/
 [Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
 [Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
 
 
 [Product Name Screen Shot]: images/population1.jpg
+
+[leaflet.js]: https://leafletjs.com/docs/images/logo.png
 [leaflet-url]:https://leafletjs.com
 [ApexCharts-url]:https://apexcharts.com
 [Bootstrap-url]: https://getbootstrap.com
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Axios-url]: https://axios-http.com/docs/intro
+[Axios.com]: [https://axios-http.com/docs/intro](https://axios-http.com/assets/logo.svg)
