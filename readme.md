@@ -39,7 +39,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#setting-up-base-map">Setting Up Base Map</a></li>
+        <li><a href="#setting-up-leaflet">Setting Up Leaflet</a></li>
         <li><a href="#setting-up-apexcharts">Setting Up ApexCharts</a></li>
         <li><a href="#installing-bootstrap">Installing Bootstrap</a></li>
       </ul>
@@ -51,9 +51,9 @@
         <li><a href="#data-loading">Data Loading</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#usage">Creating Map and Layers</a></li>
+    <li><a href="#roadmap">Creating Charts</a></li>
+    <li><a href="#contributing"></a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -95,7 +95,7 @@ The list below is used for developing map and chart.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-### Setting Up Base Map
+### Setting Up Leaflet
 
 * The latest stable Leaflet release is available on several CDN’s — to start using it straight away, place this in the head of your HTML code:
   ```sh
@@ -140,7 +140,6 @@ The list below is used for developing map and chart.
   ```sh
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-    oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-  <p align="right">(<a href="#readme-top">back to top</a>)</p>
   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -156,91 +155,117 @@ The list below is used for developing map and chart.
     2.  GeoJSON file with Singapore Sub Zones Coordinates Plan is downloaded.
     3.  Once filtered data are ready from Step 1, load data manually into GeoJSON file using [geojson.io](https://geojson.io/#map=10.34/1.3147/103.8471).
     4.  Upload the updated GeoJSON for project
-       [![gejsonio][gejsonio]]     
+       ![gejsonio][gejsonio]
        
    * Data converting to JSON file is straight forward by using available online converter after csv or xls file is downloaded (Ensure the csv/xls file is in correct format)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Data Loading (To continue)
 
-* Data are availabe in .xlsx/.xls or csv format and need to be converted into GeoJSON or JSON files
-  * Converting to GeoJSON
-    1.  Data are downloaded and filtered by population gender, age and properties type for each planning area and sub zones.
-    2.  GeoJSON file with Singapore Sub Zones Coordinates Plan is downloaded.
-    3.  Once filtered data are ready from Step 1, load data manually into GeoJSON file using [geojson.io](https://geojson.io/#map=10.34/1.3147/103.8471).
-    4.  Upload the updated GeoJSON for project
-       
-   * Data converting to JSON file is straight forward by using available online converter after csv or xls file is downloaded (Ensure the csv/xls file is in correct format)
+### Data Loading
 
+* Load data from GeoJSON file to Leaflet map using "axios.get" and "L.geoJSON"
+  ```sh
+  async function loadData() {
+
+  const response = await axios.get("singaporePopulation2022.geojson");
+
+  L.geoJson(response.data, {
+    style: {...},
+    onEachFeature: {...}
+      }).addTo(singaporePopulationLayer)
+      }
+  loadData(); //Call loadData function
+  ```
+
+* Load data from JSON file to ApexChart using "axios.get" and 
+  ```sh
+  async function getData() {
+  const response = await axios.get("singaporePopulationTable.json");
+  return response.data;}
+
+  getData(); //Call getData function
+  ```
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- Creating Map and Layers -->
+## Creating Map and Layeres
+The map consists of multiple layers based on population categories and different type of views. It also contains one search option, information box when mouse hover over a sub zone and one legend for population number with color. 
+  1. Adding Layers to Map
+  ```sh
+  const singaporePopulationLayer = L.layerGroup().addTo(map);
+  let overLayers = {
+  "Overall Resident Population": singaporePopulationLayer}
+  L.control.layers(overLayers).addTo(map);
+  ```
+  2. Adding innerHTML (Legend)
+  ```sh
+  const legend = L.control({ position: "bottomright" });
+  legend.onAdd = function() {
+  const div = L.DomUtil.create("div", "info legend"),
+  grades = [0, 10000, 20000, 30000, 40000, 50000];
+
+  // loop through density intervals and generate a label with a colored square for each   interval
+  for (var i = 0; i < grades.length; i++) {
+    div.innerHTML +=
+      // '<h4>Singapore Population</h4>'+ '</b><br />' + 
+      '<i style="background:' + colorPop(grades[i] + 1) + '"></i> ' +
+      grades[i] + (grades[i + 1] ? ' - ' + grades[i + 1] + '<br>' : '+');
+  }
+  return div;};
+  legend.addTo(map);
+  ```
+  3. Adding Search Control to Map
+  ```sh
+  const searchControl = new L.Control.Search({
+    layer: singaporePopulationLayer,
+    propertyName: 'subZone'},
+    moveToLocation: function(latlng, title, map) {
+      //map.fitBounds( latlng.layer.getBounds() );
+      var zoom = map.getBoundsZoom(latlng.layer.getBounds());
+      map.setView(latlng, zoom); // access the zoom
+    }
+  });
+  searchControl.on('search:locationfound', function(e) {
+    e.layer.setStyle({ color: '#0f0' });
+    if (e.layer._popup)
+      e.layer.openPopup();
+
+  }).on('search:collapsed', function(e) {
+    featuresLayer.eachLayer(function(layer) {	//restore feature color
+      featuresLayer.resetStyle(layer);
+    });
+  });
+  map.addControl(searchControl);}  //inizialize search control
+  ```
+
+
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
-
-This section will show useful examples of how a project can be used.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Demo Usage
 
 
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+
+
+
+<!-- REFERENCES -->
+## REFERENCES
 
 * []()
 * []()
@@ -250,9 +275,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
+<!-- IMAGES & URLS -->
 
 [project-screenshot]: images/population1.jpg
 [geojsonio]: images/geojsonio.png
