@@ -33,14 +33,22 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Data Sources</a></li>
+        <li><a href="#data-sources">Data Sources</a></li>
       </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#setting-up-base-map">Setting Up Base Map</a></li>
+        <li><a href="#setting-up-apexcharts">Setting Up ApexCharts</a></li>
+        <li><a href="#installing-bootstrap">Installing Bootstrap</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#data-preparation-and-loading">Data Preparation and Loading</a>
+      <ul>
+        <li><a href="#data-preparation">Data Preparation</a></li>
+        <li><a href="#data-loading">Data Loading</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -138,6 +146,35 @@ The list below is used for developing map and chart.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## Getting Started
+
+### Setting Up Base Map
+
+* The latest stable Leaflet release is available on several CDN’s — to start using it straight away, place this in the head of your HTML code:
+  ```sh
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  ```
+
+* Creating base map for Singapore
+  ```sh
+  const singapore = [1.34096, 103.8198]; //Singapore latlong
+  const map = L.map("map").setView(singapore, 12);
+
+  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
+  maxZoom: 18,
+  id: 'mapbox/streets-v11',
+  tileSize: 512,
+  zoomOffset: -1,
+  accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw' //demo access token}).addTo(map);
+  ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -218,11 +255,6 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 [product-screenshot]: images/population1.jpg
 
-[leaflet-url]:https://leafletjs.com
-[ApexCharts-url]:https://apexcharts.com
-[Bootstrap-url]: https://getbootstrap.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Axios-url]: https://axios-http.com/docs/intro
-[Axios.com]: [https://axios-http.com/docs/intro](https://axios-http.com/assets/logo.svg)
+
 
 
