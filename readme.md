@@ -5,7 +5,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#project-introduction">Project Introduction</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
         <li><a href="#data-sources">Data Sources</a></li>
@@ -28,7 +28,7 @@
     </li>
     <li><a href="#creating-map-layers">Creating Map Layers</a></li>
     <li><a href="#creating-charts">Creating Charts</a></li>
-    <li><a href="#demo-usage">Demo Usage</a></li>
+    <li><a href="#usage">Usage</a></li>
     <li><a href="#references">REFERENCES</a></li>
   </ol>
 </details>
@@ -169,7 +169,7 @@ The list below is used for developing map and chart.
 
 
 <!-- Creating Map Layers -->
-## Creating Map Layeres
+## Creating Map Layers
 The map consists of multiple layers based on population categories and different type of views. It also contains one search option, information box when mouse hover over a sub zone and one legend for population number with color. 
 
   1. Adding Layers to Map
@@ -336,24 +336,31 @@ Charts are created using ApexCharts and div inside "map" container. There are to
 
 
 <!-- USAGE EXAMPLES -->
-## Demo Usage
+## Usage
+  ![screenshot](imgaes/screenshot.png)
+  In this view, the base layers are divided into default view, terrain view and night view, and it is displayed at right top of the map. Search button is placed on the left top and can be used to search Sub Zones name in Singapore. It will direct to the location and zoom it in the center of the map. 
+  
+  ![screenshot](images/screenshot1.png)
+In this plot view, overlay layers are shown in as below:
 
+  * Overall Resident Population
+  * Female Resident Population
+  * Male Resident Population
+  * Resident Population Aged Below 5 Years
+  * Resident Population Aged 65 Years and Over
+  * Resident Population Staying in HDB Flats
+  * Resident Population Staying in Condominium
+  * Resident Population Staying in Landed Properties
 
+Lastly, the markers layer for sub zones is added to location the center of the zones. By viewing the above layers, user will be able to clearly identify the most populated area and the least area based on gender, ages and type of residence. Additionally, the Legend on the right bottom will state the number of people staing in sub zones based on coloring.
 
+There are also three sections to choose Chart options on right top of web page:
 
+  1. Population (1960 - 2021): It provides tracking information of total population, female/male population and population ages 0-14, 15-64 and 65+ from 1960 to 2021
+  2. Population Rate (1960 - 2021): Similarly, it shows annual population growth and trend of birth rate, fertility rate and death rate
+  4. Overview: It illustrates clear view of recent overall population and annual growth rate showing constant growth from 2012 to 2020 and declined in 2021.
 
-
-
-
-
-
-
-
-
-
-
-
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- REFERENCES -->
 ## REFERENCES
