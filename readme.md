@@ -336,6 +336,7 @@ Charts are created using ApexCharts and div inside "map" container. There are to
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+  [Web Page Link](https://assignment1-eicot.eicot.repl.co)
   ![screenshot](images/screenshot.png)
   In this view, the base layers are divided into default view, terrain view and night view, and it is displayed at right top of the map. Search button is placed on the left top and can be used to search Sub Zones name in Singapore. It will direct to the location and zoom it in the center of the map. 
   
