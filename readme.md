@@ -64,9 +64,9 @@
 <!-- ABOUT THE PROJECT -->
 ## Project Introduction
 
-[![Product Name Screen Shot][product-screenshot]](https://assignment1-eicot.eicot.repl.co)
+[![Product Name Screen Shot][project-screenshot]](https://assignment1-eicot.eicot.repl.co)
 
-The Singapore Population is to visualize the raw data of population with Leaflet Map and ApexCharts. The project lay outs population information categorized by gender, age and residence type, and reveal the demographic structure of Singapore based on planning area in 2022. It also provides information chart to better analyze the population trend by developing line chart with different categories such as growth rate, birth rate, death rate and etc. 
+The Singapore Population is to visualize the raw data of population with Leaflet Map and ApexCharts. The project lay outs population information categorized by gender, age and residence property types, and reveal the demographic structure of Singapore based on planning area in 2022. It also provides information chart to better analyze the population trend by developing line chart with different categories such as growth rate, birth rate, death rate and etc. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,7 +129,7 @@ The list below is used for developing map and chart.
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   ```
 
-### Install Bootstrap
+### Installing Bootstrap
 
 * Include Bootstrap’s CSS
   ```sh
@@ -146,31 +146,35 @@ The list below is used for developing map and chart.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## Getting Started
+## Data Preparation and Loading
 
-### Setting Up Base Map
+### Data Preparation
 
-* The latest stable Leaflet release is available on several CDN’s — to start using it straight away, place this in the head of your HTML code:
-  ```sh
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-  ```
+* Data are availabe in .xlsx/.xls or csv format and need to be converted into GeoJSON or JSON files
+  * Converting to GeoJSON
+    1.  Data are downloaded and filtered by population gender, age and properties type for each planning area and sub zones.
+    2.  GeoJSON file with Singapore Sub Zones Coordinates Plan is downloaded.
+    3.  Once filtered data are ready from Step 1, load data manually into GeoJSON file using [geojson.io](https://geojson.io/#map=10.34/1.3147/103.8471).
+    4.  Upload the updated GeoJSON for project
+       [![Product Name Screen Shot][product-screenshot]](https://assignment1-eicot.eicot.repl.co)
 
-* Creating base map for Singapore
-  ```sh
-  const singapore = [1.34096, 103.8198]; //Singapore latlong
-  const map = L.map("map").setView(singapore, 12);
+![image](image.png)
+       
+       
+   * Data converting to JSON file is straight forward by using available online converter after csv or xls file is downloaded (Ensure the csv/xls file is in correct format)
 
-  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
-  maxZoom: 18,
-  id: 'mapbox/streets-v11',
-  tileSize: 512,
-  zoomOffset: -1,
-  accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw' //demo access token}).addTo(map);
-  ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Data Loading (To continue)
+
+* Data are availabe in .xlsx/.xls or csv format and need to be converted into GeoJSON or JSON files
+  * Converting to GeoJSON
+    1.  Data are downloaded and filtered by population gender, age and properties type for each planning area and sub zones.
+    2.  GeoJSON file with Singapore Sub Zones Coordinates Plan is downloaded.
+    3.  Once filtered data are ready from Step 1, load data manually into GeoJSON file using [geojson.io](https://geojson.io/#map=10.34/1.3147/103.8471).
+    4.  Upload the updated GeoJSON for project
+       
+   * Data converting to JSON file is straight forward by using available online converter after csv or xls file is downloaded (Ensure the csv/xls file is in correct format)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -253,7 +257,12 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 
-[product-screenshot]: images/population1.jpg
+[project-screenshot]: images/population1.jpg
+[geojsonio-screenshot]: images/geojsonio.png
+[leaflet-url]: https://leafletjs.com
+[ApexCharts-url]: https://apexcharts.com
+[Axios-url]: https://apexcharts.com
+[Bootstrap-url]:https://getbootstrap.com
 
 
 
