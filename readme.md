@@ -1,30 +1,5 @@
 <a name="readme-top"></a>
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">project_title</h3>
-
-  <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
-  </p>
-</div>
-
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -51,12 +26,10 @@
         <li><a href="#data-loading">Data Loading</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Creating Map and Layers</a></li>
-    <li><a href="#roadmap">Creating Charts</a></li>
-    <li><a href="#contributing"></a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#creating-map-layers">Creating Map Layers</a></li>
+    <li><a href="#creating-charts">Creating Charts</a></li>
+    <li><a href="#demo-usage">Demo Usage</a></li>
+    <li><a href="#references">REFERENCES</a></li>
   </ol>
 </details>
 
@@ -244,8 +217,19 @@ The map consists of multiple layers based on population categories and different
   return div;};
   legend.addTo(map);
   ```
+  3. Adding Markers to the center of polygon
+  ```sh
+  onEachFeature: function(feature, layer) {
+
+      if (feature.geometry.type === "MultiPolygon") {
+        var center = layer.getBounds().getCenter();
+        var marker = L.marker(center, { icon: markerIcon });
+        // console.log(marker)
+        marker.addTo(polygonCenter)
+      }}
+  ```
   
-  3. Adding Search Control to Map
+  4. Adding Search Control to Map
   ```sh
   const searchControl = new L.Control.Search({
     layer: singaporePopulationLayer,
@@ -272,6 +256,7 @@ The map consists of multiple layers based on population categories and different
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- Creating Charts -->
 ## Creating Charts
 Charts are created using ApexCharts and div inside "map" container. There are total 3 charts displayed and provide comparison information population.
 
