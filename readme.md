@@ -39,8 +39,7 @@
 
 [![Product Name Screen Shot][project-screenshot]](https://assignment1-eicot.eicot.repl.co)
 
-The Singapore Population is to visualize the raw data of population with Leaflet Map and ApexCharts. The project lay outs population information categorized by gender, age and residence property types, and reveal the demographic structure of Singapore based on planning area in 2022. It also provides information chart to better analyze the population trend by developing line chart with different categories such as growth rate, birth rate, death rate and etc. 
-The project will help researchers and city planning organization for better understanding and clear visualization of population across the country.
+The Singapore Population project is to visualize the raw data of population with Leaflet Map and ApexCharts. The project lay outs population information categorized by gender, age and residence property types, and reveal the demographic structure of Singapore based on planning area in 2022. It also provides information chart to better analyze the population trend by developing line chart with different categories such as growth rate, birth rate, death rate and etc from 1960 to 2021. The project will help researchers and city planning organization for better understanding and clear visualization of population across the country.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,7 +134,7 @@ The list below is used for developing map and chart.
     4.  Upload the updated GeoJSON for project
        ![gejsonio](images/gejsonio.png)
        
-   * Data converting to JSON file is straight forward by using available online converter after csv or xls file is downloaded (Ensure the csv/xls file is in correct format)
+   * Converting data to JSON file is straight forward by using available online converter after csv or xls file is downloaded (Ensure the csv/xls file is in correct format)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -337,11 +336,11 @@ Charts are created using ApexCharts and div inside "map" container. There are to
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-  ![screenshot](imgaes/screenshot.png)
+  ![screenshot](images/screenshot.png)
   In this view, the base layers are divided into default view, terrain view and night view, and it is displayed at right top of the map. Search button is placed on the left top and can be used to search Sub Zones name in Singapore. It will direct to the location and zoom it in the center of the map. 
   
   ![screenshot](images/screenshot1.png)
-In this plot view, overlay layers are shown in as below:
+In this plot view, overlay layers are shown as below:
 
   * Overall Resident Population
   * Female Resident Population
@@ -358,19 +357,18 @@ There are also three sections to choose Chart options on right top of web page:
 
   1. Population (1960 - 2021): It provides tracking information of total population, female/male population and population ages 0-14, 15-64 and 65+ from 1960 to 2021
   2. Population Rate (1960 - 2021): Similarly, it shows annual population growth and trend of birth rate, fertility rate and death rate
-  4. Overview: It illustrates clear view of recent overall population and annual growth rate showing constant growth from 2012 to 2020 and declined in 2021.
+  3. Overview: It illustrates clear view of recent overall population and annual growth rate showing constant growth from 2012 to 2020 and declined in 2021.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- REFERENCES -->
 ## REFERENCES
 
-* []()
-* []()
-* []()
+* Provides Animated Marker Clustering functionality for Leaflet, a JS library for interactive maps.The file is available at [Leaflet Marker Cluster](https://github.com/Leaflet/Leaflet.markercluster)
+* A Leaflet control that search markers/features location by custom property. The file is available at [Leaflet Search Control](https://opengeo.tech/maps/leaflet-search/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- IMAGES & URLS -->
