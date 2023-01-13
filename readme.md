@@ -67,6 +67,7 @@
 [![Product Name Screen Shot][project-screenshot]](https://assignment1-eicot.eicot.repl.co)
 
 The Singapore Population is to visualize the raw data of population with Leaflet Map and ApexCharts. The project lay outs population information categorized by gender, age and residence property types, and reveal the demographic structure of Singapore based on planning area in 2022. It also provides information chart to better analyze the population trend by developing line chart with different categories such as growth rate, birth rate, death rate and etc. 
+The project will help researchers and city planning organization for better understanding and clear visualization of population across the country.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,6 +130,9 @@ The list below is used for developing map and chart.
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 ### Installing Bootstrap
 
 * Include Bootstrap’s CSS
@@ -145,6 +149,7 @@ The list below is used for developing map and chart.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- Data Preparation and Loading -->
 ## Data Preparation and Loading
 
 ### Data Preparation
@@ -153,7 +158,7 @@ The list below is used for developing map and chart.
   * Converting to GeoJSON
     1.  Data are downloaded and filtered by population gender, age and properties type for each planning area and sub zones.
     2.  GeoJSON file with Singapore Sub Zones Coordinates Plan is downloaded.
-    3.  Once filtered data are ready from Step 1, load data manually into GeoJSON file using [geojson.io](https://geojson.io/#map=10.34/1.3147/103.8471).
+    3.  Once filtered data are ready from Step 1, load data manually into GeoJSON file using [geojson.io](https://geojson.io/#map=10.34/1.3147/103.8471).(As shown in below photo)
     4.  Upload the updated GeoJSON for project
        ![gejsonio](images/gejsonio.png)
        
@@ -190,9 +195,10 @@ The list below is used for developing map and chart.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- Creating Map and Layers -->
-## Creating Map and Layeres
+<!-- Creating Map Layers -->
+## Creating Map Layeres
 The map consists of multiple layers based on population categories and different type of views. It also contains one search option, information box when mouse hover over a sub zone and one legend for population number with color. 
+
   1. Adding Layers to Map
   ```sh
   const singaporePopulationLayer = L.layerGroup().addTo(map);
@@ -200,7 +206,28 @@ The map consists of multiple layers based on population categories and different
   "Overall Resident Population": singaporePopulationLayer}
   L.control.layers(overLayers).addTo(map);
   ```
-  2. Adding innerHTML (Legend)
+  
+  2. Adding innerHTML inside Map
+  * Adding Info Box
+  ```sh
+  const info = L.control();
+  info.onAdd = function() {
+  this._div = L.DomUtil.create("div", "info"); // create a div with a class "info"
+  this.update();
+  return this._div;};
+  // method that we will use to update the control based on feature properties passed
+  info.update = function(props) {
+  this._div.innerHTML =
+    '<h4>Total Resident Population</h4>' +
+    (props ? '<b>' +
+      "Planning Area : " + props.planningArea + '</b><br />' +
+      "Sub Zone : " + props.subZone + '</b><br />' +
+      props.totalPopulation
+      : 'Mouse hover over a sub zone');};
+  info.addTo(map);
+  ```
+  
+  * Adding Legend
   ```sh
   const legend = L.control({ position: "bottomright" });
   legend.onAdd = function() {
@@ -217,6 +244,7 @@ The map consists of multiple layers based on population categories and different
   return div;};
   legend.addTo(map);
   ```
+  
   3. Adding Search Control to Map
   ```sh
   const searchControl = new L.Control.Search({
@@ -241,7 +269,85 @@ The map consists of multiple layers based on population categories and different
   map.addControl(searchControl);}  //inizialize search control
   ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+## Creating Charts
+Charts are created using ApexCharts and div inside "map" container. There are total 3 charts displayed and provide comparison information population.
+
+  1. Transform to useful data for chart
+  ```sh
+  function transformData1(data) {
+  const population = data.map(function(dataPoint) { //Assign dataPoint with .map to call year and its population 
+    return {
+      "pop": dataPoint.populationTotal,
+      "year": dataPoint.year}
+  })
+  for (let dataPoint of population) {
+    const pop = dataPoint.pop;
+    const years = dataPoint.year;
+
+    series1.push({
+      x: dataPoint.year,
+      y: dataPoint.pop})}
+
+  return series1;
+  }
+  ```
+     
+  2. Assigning data to Charts in "graph.js"
+  ```sh
+  window.addEventListener("DOMContentLoaded", async function() {
+  const data = await getData("data.js");
+  function drawchart1() {
+    const options = {
+      chart: {
+        foreColor: "#ccc",
+        type: "line",
+        height: "330"},
+      series: [],
+      title: {
+        text: "Population (1960 - 2021)"},
+
+      //x-axis dats are congested, adjust interval to show clearer
+      xaxis: {
+        type: "category",
+        tickAmount: 5},
+
+      //Data are in million, in the y-axis divide by 1e3 to limit the number of digits
+      yaxis: {
+        labels: {
+          formatter: function(val) { return (val / 1e3).toFixed(0); }
+        },
+        "title": {
+          "text": "(in thousands)",
+          "align": "left",
+          style: {
+            fontSize: "10px",
+            fontWeight: "normal",
+            color: "white"}}},
+      // what to show there is no data
+      noData: {
+        "text": "Please select below categories"
+      }
+
+    }
+
+    // create the chart
+    const chart = new ApexCharts(document.querySelector("#chart1"), options);
+
+    // render the chart
+    chart.render()
+
+
+    // display the loaded data as a series in the chart
+    chart.updateSeries([{
+      'name': 'Population',
+      'data': series1}])}
+    drawchart1()})
+  ```  
+  
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- USAGE EXAMPLES -->
