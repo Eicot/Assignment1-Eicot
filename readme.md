@@ -156,7 +156,7 @@ The list below is used for developing map and chart.
     2.  GeoJSON file with Singapore Sub Zones Coordinates Plan is downloaded.
     3.  Once filtered data are ready from Step 1, load data manually into GeoJSON file using [geojson.io](https://geojson.io/#map=10.34/1.3147/103.8471).
     4.  Upload the updated GeoJSON for project
-       ![gejsonio][gejsonio]       
+       [![gejsonio][gejsonio]]     
        
    * Data converting to JSON file is straight forward by using available online converter after csv or xls file is downloaded (Ensure the csv/xls file is in correct format)
 
